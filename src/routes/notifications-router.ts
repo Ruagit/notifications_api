@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { getItemsByPost, addItemToFeed, patchItemAsRead } from '../controllers/notification-controller';
-import { validatePost, validatePatch, validateParams } from '../middleware/index'
+import { validatePost, validatePatch, validateParams } from '../middleware/index';
 import { handle405s } from '../errors';
 import endpoints from './endpoints.json';
 

@@ -27,7 +27,7 @@ export const validatePost = (req: Request, res: Response, next: NextFunction) =>
     
     if( error ) res.status(400).send({ error : error.message });
     return next(error);
-}
+};
 
 
 export const validatePatch = (req: Request<unknown, unknown, { read: boolean }>, res: Response, next: NextFunction) => {
@@ -37,7 +37,7 @@ export const validatePatch = (req: Request<unknown, unknown, { read: boolean }>,
 
     if( error ) res.status(400).send({ error : error.message });
     return next(error);
-}
+};
 
 export const validateParams = (req: Request<{ id: string }>, res: Response, next: NextFunction) => {
     const { id } = req.params;
@@ -46,4 +46,4 @@ export const validateParams = (req: Request<{ id: string }>, res: Response, next
 
     if( error ) res.status(400).send({ error : error.message });
     return next(error);
-}
+};

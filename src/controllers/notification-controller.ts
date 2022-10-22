@@ -22,7 +22,7 @@ export const getItemsByPost = (req: Request, res: Response) => {
     if (!items) res.status(404).send('Notifications are not available');
 
     return res.status(200).send(items);
-}
+};
 
 export const addItemToFeed = (req: Request, res: Response) => {
     const notification: PostNotification = req.body;
@@ -37,7 +37,7 @@ export const addItemToFeed = (req: Request, res: Response) => {
       } catch (error) {
         res.status(400).send(error);
       }
-}
+};
 
 export const patchItemAsRead = (req: Request<{id : string}, unknown, { read: boolean } >, res: Response) => {
     const { id } = req.params;
@@ -51,11 +51,11 @@ export const patchItemAsRead = (req: Request<{id : string}, unknown, { read: boo
             return {...item, read}
         }
         return item;
-    })
+    });
     
     const markedItems = items.filter(({ post }) => post.id === id);
 
-    if (markedItems.length === 0) res.status(200).send('No notifications were marked as read')
+    if (markedItems.length === 0) res.status(200).send('No notifications were marked as read');
 
     try {
         writeFileSync(path, JSON.stringify(items, null , 2));
@@ -63,4 +63,4 @@ export const patchItemAsRead = (req: Request<{id : string}, unknown, { read: boo
       } catch (error) {
         res.status(400).send(error);
       }
-}
+};

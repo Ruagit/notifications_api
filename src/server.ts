@@ -1,6 +1,6 @@
 import express, { Express }  from 'express';
-import notificationsRouter from './routes'
-import { handle404s, handle405s }  from './errors'
+import notificationsRouter from './routes';
+import { handle404s, handle405s }  from './errors';
 
 const app: Express = express();
 
