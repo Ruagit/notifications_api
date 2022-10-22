@@ -1,0 +1,40 @@
+{
+  "name": "notifications-service",
+  "version": "0.0.1",
+  "description": "Simple API to serve an aggregated feed of notifications",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -fr dist && tsc",
+    "lint": "eslint --ext .js,.ts .",
+    "test": "jest src/__tests__",
+    "start": "nodemon -L dist/index.js",
+    "start-dev": "nodemon -L src/index.ts"
+  },
+  "author": "Justin Bosman",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/express": "4.17.14",
+    "@types/jest": "^29.2.0",
+    "@types/node": "18.11.2",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "5.40.1",
+    "@typescript-eslint/parser": "5.40.1",
+    "jest": "^29.2.1",
+    "joi": "17.6.3",
+    "nodemon": "2.0.20",
+    "prettier": "2.7.1",
+    "supertest": "6.3.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  }
+}
