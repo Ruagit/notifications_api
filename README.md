@@ -1,7 +1,5 @@
-check types
-check ;
 readme
-run build again
+add invalid methods tests?
 
 Testing 
 - increase coverage
