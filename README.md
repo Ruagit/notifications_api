@@ -1,13 +1,14 @@
 # API - Social Media Notifications
 
 ## Description
-    
+
 This a simple Node/TypeScript Express server that exposes three endpoints to fetch, add and update notifications for a fictious social media platform.
 
 ## How to Setup Locally
 
 1. Run `npm run install` to install all necessary dependencies
 2. To run the server locally, run `npm run start-dev` and open an API testing application like Postman to test the endpoints listed below.
+3. You can run tests using `npm run test`
 
 Can be optimised for production use by running `npm run build` followed by `npm run start`.
 
