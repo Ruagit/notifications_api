@@ -6,15 +6,15 @@ This a simple Node/TypeScript Express server that exposes three endpoints to fet
 
 ## How to Setup Locally
 
-1. Run `npm run install` to install all necessary dependencies
+1. Run `npm run install` to install all necessary dependencies.
 2. To run the server locally, run `npm run start-dev` and open an API testing application like Postman to test the endpoints listed below.
-3. You can run tests using `npm run test`
+3. You can run tests using `npm run test`.
 
 Can be optimised for production use by running `npm run build` followed by `npm run start`.
 
 ## Endpoints
 
-You can view all endpoints and exmaple requests and responses by accessing `/notifications/feed/endpoints`
+You can view all endpoints and exmaple requests and responses by accessing `/notifications/feed/endpoints`.
 
 ### Get All Notifications for a Post
 
@@ -120,5 +120,5 @@ Endpoint available at `/notifications/feed/endpoints/post/:id`
 - Add in a simple database with schema's for testing, development and production.
 - Implement more of an mvc pattern with models doing the logic to fetch, add and update data. 
 - Host the API in a platform like Heroku so it is available online.
-- Add in a simple form of authentication on HTTP requests
-- Add in some logging for better observability
+- Add in a simple form of authentication on HTTP requests.
+- Add in some logging for better observability.
