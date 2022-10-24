@@ -65,7 +65,7 @@ Endpoint available at `/notifications/feed/endpoints/post`
             "read": false,
             "post": {
                 "id": "b9999f970c3ddd528671df76c4dcf13e",
-                "title": "dynamically dyanmic worldwide sales"
+                "title": "dynamically dynamic worldwide sales"
             },
             "user": {
                 "id": "403f220c3d413fe9cb0b36142ebfb35d",
