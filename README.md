@@ -116,8 +116,9 @@ Endpoint available at `/notifications/feed/endpoints/post/:id`
 ```
 ## Potential Improvements
 
-
-Testing 
-- increase coverage
-- improve tests
-- Invalid methods test# notifications_api
+- Improve testing coverage and depth of tests.
+- Add in a simple database with schema's for testing, development and production.
+- Implement more of an mvc pattern with models doing the logic to fetch, add and update data. 
+- Host the API in a platform like Heroku so it is available online.
+- Add in a simple form of authentication on HTTP requests
+- Add in some logging for better observability
